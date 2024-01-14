@@ -52,11 +52,13 @@ int main(int argc, char *argv[]) {
   push(stack, 6);
   push(stack, 3);
 
-  printf("%d\n", pop(stack));
-  printf("%d\n", pop(stack));
-  printf("%d\n", pop(stack));
-  printf("%d\n", pop(stack));
-  printf("%d\n", pop(stack));
+  //stack right now is: 3,6,9,5
+
+  printf("%d\n", pop(stack)); //returns 3
+  printf("%d\n", pop(stack)); //returns 6
+  printf("%d\n", pop(stack)); //returns 9
+  printf("%d\n", pop(stack)); //returns 5
+  printf("%d\n", pop(stack)); //returns 0 -> NULL
 
   return 0;
 }

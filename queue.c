@@ -53,11 +53,13 @@ int main(int argc, char *argv[]) {
   enqueue(queue, 7);
   enqueue(queue, 4);
 
-  printf("%d\n", dequeue(queue));
-  printf("%d\n", dequeue(queue));
-  printf("%d\n", dequeue(queue));
-  printf("%d\n", dequeue(queue));
-  printf("%d\n", dequeue(queue));
+  // queue right now is: 5,8,7,4
+
+  printf("%d\n", dequeue(queue)); // returns 5
+  printf("%d\n", dequeue(queue)); // returns 8
+  printf("%d\n", dequeue(queue)); // returns 7
+  printf("%d\n", dequeue(queue)); // returns 4
+  printf("%d\n", dequeue(queue)); // returns 0 -> NULL
 
   return 0;
 }
