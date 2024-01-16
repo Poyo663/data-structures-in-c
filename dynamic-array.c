@@ -69,13 +69,27 @@ int delete(List *list, int index) {
 int main(int argc, char *argv[]) {
   List myList = getList();
 
-  append(&myList, 4, 9);
+  append(&myList, 4, 9); // list size: 10
   append(&myList, 6, 9);
   append(&myList, 9, 0);
+  append(&myList, 9, 0);
+  append(&myList, 6, 0);
+  append(&myList, 5, 0);
+  append(&myList, 8, 0);
+  append(&myList, 6, 0);
+  append(&myList, 2, 0);
+  append(&myList, 3, 0);
+  append(&myList, 3, 0); // list size: 15
+  append(&myList, 3, 0);
+  append(&myList, 3, 0);
+  append(&myList, 3, 0);
+  append(&myList, 3, 0);
+  append(&myList, 3, 0); // list size: 22
 
   printf("%d", delete (&myList, 0));
   printf("%d", delete (&myList, 0));
-  printf("%d", delete (&myList, 0));
+  printf("%d", delete (&myList, 9));
+  printf("\n%d", myList.size); // prints 22
 
   return statusCode;
 }
